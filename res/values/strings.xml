@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GasControl</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_insert_data">InsertData</string>
+    <string name="insertData_dateInfo">Date: xx/xx/xxxx</string>
+    <string name="insertData_Gas">Gasoline</string>
+    <string name="insertData_Alc">Ethanol</string>
+    <string name="insertData_GasValue">Gas Value:</string>
+    <string name="insertData_TotalValue">Total Value:</string>
+    <string name="insertData_TotalKMValue">Total KM Value:</string>
+    <string name="insertData_SaveButton">Save</string>
+    <string name="title_activity_custom_content_provider">CustomContentProvider</string>
+
+</resources>
