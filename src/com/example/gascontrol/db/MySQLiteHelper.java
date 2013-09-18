@@ -23,11 +23,11 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 	  private static final String DATABASE_CREATE = "create table "
 	      + TABLE_GASDB + "(" 
 	      + COLUMN_ID + " integer primary key autoincrement, " 
-	      + COLUMN_GASTYPE + "integer not null, "
-	      + COLUMN_GASVALUE + "integer not null, "
-	      + COLUMN_TOTALVALUE + "integer not null, "
-   	      + COLUMN_TOTALKM + "integer not null, "
-   	      + COLUMN_DATE + "text not null, "
+	      + COLUMN_GASTYPE + " integer not null, "
+	      + COLUMN_GASVALUE + " integer not null, "
+	      + COLUMN_TOTALVALUE + " integer not null, "
+   	      + COLUMN_TOTALKM + " integer not null, "
+   	      + COLUMN_DATE + " text not null, "
 	      + COLUMN_RENDIMENTO  + " integer not null);";
 
 	  public MySQLiteHelper(Context context) {

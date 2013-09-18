@@ -23,6 +23,14 @@ public class MainActivity extends Activity {
             	startActivity(myIntent);
             }
         });
+
+        final Button button2 = (Button) findViewById(R.id.teste);
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+            	Intent myIntent = new Intent(MainActivity.this, TestDatabaseActivity.class);
+            	startActivity(myIntent);
+            }
+        });
 	}
 
 	@Override

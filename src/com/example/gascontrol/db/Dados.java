@@ -98,9 +98,7 @@ public class Dados {
 	 */
 	@Override
 	public String toString() {
-		return "Dados [gasType=" + gasType + ", gasValue=" + gasValue
-				+ ", totalValue=" + totalValue + ", totalKM=" + totalKM
-				+ ", date=" + date + ", rendimento=" + rendimento + "]";
+		return this.date;
 	}
 	
 	
