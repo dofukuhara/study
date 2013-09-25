@@ -4,11 +4,24 @@ public class Dados {
 	
 	private long id;
 	private int gasType;
-	private long gasValue;
-	private long totalValue;
-	private long totalKM;
+	private double gasValue;
+	private double totalValue;
+	private double totalKM;
 	private String date;
 	private long rendimento;
+	
+	public Dados () {
+		// empty Constructor
+	}
+	
+	public Dados (int gasType, double gasValue, double totalValue, double totalKM, String date) {
+		this.gasType = gasType;
+		this.gasValue = gasValue;
+		this.totalValue = totalValue;
+		this.totalKM = totalKM;
+		this.date = date;
+	}
+	
 	/**
 	 * @return the id
 	 */
@@ -36,7 +49,7 @@ public class Dados {
 	/**
 	 * @return the gasValue
 	 */
-	public long getGasValue() {
+	public double getGasValue() {
 		return gasValue;
 	}
 	/**
@@ -48,7 +61,7 @@ public class Dados {
 	/**
 	 * @return the totalValue
 	 */
-	public long getTotalValue() {
+	public double getTotalValue() {
 		return totalValue;
 	}
 	/**
@@ -60,7 +73,7 @@ public class Dados {
 	/**
 	 * @return the totalKM
 	 */
-	public long getTotalKM() {
+	public double getTotalKM() {
 		return totalKM;
 	}
 	/**
@@ -98,7 +111,17 @@ public class Dados {
 	 */
 	@Override
 	public String toString() {
-		return this.date;
+		String message = 
+				"\n************************************************\n" +
+				"\nRec ID: " + this.id +
+				"\nGasType: " + this.gasType +
+				"\nGas Value: " + this.gasValue + 
+				"\nTotal Value: " + this.totalValue + 
+				"\nTotal KM: " + this.totalKM +
+				"\nDate: " + this.date +
+				"\nRendimento: " + this.rendimento +
+				"\n************************************************\n";
+		return message;
 	}
 	
 	

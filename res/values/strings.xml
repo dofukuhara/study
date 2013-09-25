@@ -13,5 +13,6 @@
     <string name="insertData_TotalKMValue">Total KM Value:</string>
     <string name="insertData_SaveButton">Save</string>
     <string name="title_activity_custom_content_provider">CustomContentProvider</string>
+    <string name="title_activity_view_data">ViewDataActivity</string>
 
 </resources>

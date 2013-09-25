@@ -37,6 +37,20 @@ public class GasDataSource {
 		dbHelper.close();
 	}
 	
+	public long insertNewRecord (Dados dado) {
+		ContentValues values = new ContentValues();
+		long insertID = 0;
+
+		values.put(MySQLiteHelper.COLUMN_GASTYPE, dado.getGasType());
+		values.put(MySQLiteHelper.COLUMN_GASVALUE, dado.getGasValue());
+		values.put(MySQLiteHelper.COLUMN_TOTALVALUE, dado.getTotalValue());
+		values.put(MySQLiteHelper.COLUMN_TOTALKM, dado.getTotalKM());
+		values.put(MySQLiteHelper.COLUMN_DATE, dado.getDate());
+		
+		insertID = database.insert(MySQLiteHelper.TABLE_GASDB, null, values);
+		return insertID;
+	}
+	
 	//public Dados createDado(int gasType, long gasValue, long totalValue, long totalKM, String date, long rendimento) {
 	public Dados createDado(String teste) {
 		ContentValues values = new ContentValues();
